@@ -1,4 +1,4 @@
-// utils/processInput.js
+
 function processInput(data) {
     const odd_numbers = [];
     const even_numbers = [];
@@ -9,7 +9,7 @@ function processInput(data) {
   
     data.forEach(item => {
       if (/^[0-9]+$/.test(item)) {
-        // number string
+       
         if (parseInt(item, 10) % 2 === 0) {
           even_numbers.push(item);
         } else {
@@ -24,7 +24,7 @@ function processInput(data) {
       }
     });
   
-    // Concatenate all characters, reverse, alternate caps
+   
     let concat_string = concatChars
       .reverse()
       .map((ch, idx) => (idx % 2 === 0 ? ch.toUpperCase() : ch.toLowerCase()))
